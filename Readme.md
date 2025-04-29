@@ -1,5 +1,1 @@
-This is my First Repository!
-
-Made new change!!
-
-I am using source control of github!!
+I have loaded my Dataset and Calculated Mean, Median and Mode using Pandas
