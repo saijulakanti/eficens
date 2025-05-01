@@ -1,6 +1,6 @@
 import openai
 
-client = openai.OpenAI(api_key="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")
+client = openai.OpenAI(api_key=)
 
 #integers = input("Input the integers as list: ")
 
