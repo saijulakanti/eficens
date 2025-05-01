@@ -1,13 +1,13 @@
 #Question 1 - Python Code
 import openai
 
-client = openai.OpenAI(api_key="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")
+client = openai.OpenAI(api_key="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")
 
-#integers = input("Input the integers as list: ")
+problem = input("Enter the problem statement: ")
 
 messages = [
-    {"role": "system", "content": "You generate a python code, to identify and output all pairs of numbers that sum up to a specified target number, from the given list of integers. The code should avoid duplicates and be efficientoptimized for efficiency. The inputs will be list of integers and target number. Give the code only no pretext or post text."}
-    #{"role": "user", "content": f'Classify the sentiment of this review:\n\n"{review}"\n\nSentiment: '}
+    {"role": "system", "content": "You generate a python code for the given problem, identify inputs needed as well and try to avoid pretext and post text."},
+    {"role": "user", "content": f'Generate the python code for the problem:\n\n"{problem}"\n\nproblem: '}
 ]
 
 response = client.chat.completions.create(
@@ -17,4 +17,4 @@ response = client.chat.completions.create(
 )
 
 code = response.choices[0].message.content.strip()
-print(f"code: {code}")
+print(f"\n\ncode: {code}")
