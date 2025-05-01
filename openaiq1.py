@@ -1,6 +1,7 @@
+#Question 1 - Python Code
 import openai
 
-client = openai.OpenAI(api_key="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")
+client = openai.OpenAI(api_key="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")
 
 #integers = input("Input the integers as list: ")
 
