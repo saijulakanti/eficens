@@ -1,7 +1,14 @@
 #Question 2 - Translation
 import openai
 
-client = openai.OpenAI(api_key="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")
+import os
+from dotenv import load_dotenv
+
+load_dotenv() 
+OpenAI_Key = os.getenv("OPENAI_API_KEY")
+
+# Set your API key
+client = openai.OpenAI(api_key=OpenAI_Key)
 
 #integers = input("Input the integers as list: ")
 

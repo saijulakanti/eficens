@@ -1,7 +1,14 @@
 #Question 1 - Python Code
 import openai
 
-client = openai.OpenAI(api_key="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")
+import os
+from dotenv import load_dotenv
+
+load_dotenv() 
+OpenAI_Key = os.getenv("OPENAI_API_KEY")
+
+# Set your API key
+client = openai.OpenAI(api_key=OpenAI_Key)
 
 problem = input("Enter the problem statement: ")
 
